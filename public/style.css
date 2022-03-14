@@ -1,0 +1,563 @@
+ 
+        
+        header {
+            /* background-color: rgb(198, 33, 33); */
+            display: flex;
+            flex-direction: column;
+            /* justify-content:center; */
+            /* align-items: center; */
+            /* border: 2px solid red; */
+            border-radius: 3px;
+            width: 100%;
+            height: 900px;
+        }
+
+        #menu{
+            
+             
+            display: flex;
+           
+            
+        }
+       
+            #logo{
+                height: 100px;
+    width: 100px;
+    padding-top: 0px;
+    margin: 7px 25px;
+            }
+        #logo img {
+            height: 100%;
+            width: 100%;
+            border-radius: 55px;
+        }
+
+        #menu ul {
+            display: flex;
+        }
+
+        #menu li {
+            list-style: none;
+            margin: 29px 20px;
+        }
+
+        #menu ul li a {
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: bold;
+            padding: 12px;
+            color: rgb(22, 21, 21);
+            border-radius: 26px;
+        }
+
+        /* #navbar::before {
+            content: "";
+            position: absolute;
+            height: 75px;
+            width: 100%;
+            z-index: -1;
+            background-color: rgb(29, 26, 26);
+            opacity: 0.78;
+        } */
+
+        #menu ul li a:hover {
+            color: white;
+            background-color: rgb(27, 27, 25);
+
+        }
+
+        header::before {
+            background: url("../images/aliaksei-manlyx-YipPfXLCiUo-unsplash.jpg") no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            height: 900px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.65;
+        }
+
+        #mrq {
+            color: #24fa8d;
+           
+        }
+
+        #head {
+            height: 640px;
+            width: 800px;
+            /* border: 2px solid red; */
+            margin-left: 14px;
+        }
+
+        #head h1 {
+            font-size: 5rem;
+            text-align: center;
+        }
+
+        #burger{
+            position: absolute;
+            top: 5%;
+            right: 10px;
+            cursor: pointer;
+            display: none;
+    }
+    .line{
+        background-color: rgb(255, 255, 255);
+        height: 3px;
+        width: 44px; 
+        margin: 2px 10px;
+    }
+
+        /* designing section  */
+
+        #about{
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            opacity: 0.88;
+
+            height: 800px;
+            width: 100%;
+        }
+
+        #cont1 {
+            height: 150px;
+            width: 100%;
+            /* border: 2px solid red; */
+        }
+
+        #cont2 {
+            width: 100%;
+            height: 600px;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            height: 297px;
+            width: 450px;
+            /* border: 2px solid rgb(16, 231, 41); */
+            margin: auto;
+            align-items: center;
+        }
+
+        .box img {
+            height: 100px;
+            width: 100px;
+            margin-top: 40px;
+        }
+
+        .box h5{
+            color: #94c743;
+            }
+        /* designing second section */
+
+
+        #sec2 {
+            background-color: rgb(196 206 167);
+            height: 1720px;
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+
+            /* opacity: 0.8; */
+        }
+
+        #h2 {
+            display: flex;
+            flex-direction: column;
+            /* padding: 210px; */
+            margin: 44px;
+        }
+          .box-pre{
+              display: flex;
+              justify-content: center;
+          }
+        .box1 {
+            height: 384px;
+            width: 511px;
+            /* border: 2px solid blue; */
+
+        }
+
+        #h2 img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .box1 p {
+            font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    
+    padding: 23px;
+        }
+
+
+        /* designing section3 */
+
+        #sec3 {
+            display: flex;
+            flex-direction: column;
+            height: 800px;
+            width: 100%;
+              /* <----- THE SECRET ---- */
+            /* border: 2px solid red; */
+        }
+
+        #sec3::before {
+            content: "";
+            background: url('../images/b2.jpg') no-repeat center center/cover;
+            position: absolute;
+            height:800px;
+            width: 100%;
+            z-index: -1;
+            opacity: .89;
+        }
+
+        #sec32 form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid green; */
+                margin-top: 50px;
+        }
+
+        #sec32 form input {
+            height: 40px;
+            width: 700px;
+            margin: 4px;
+            border-radius: 20px;
+            font-size: 17px;
+        }
+        #sec32 form button {
+            height: 40px;
+            width: 700px;
+            margin: 4px;
+            border-radius: 20px;
+    font-size: 14px;
+    background-color: rgb(53, 145, 7);
+    color: white
+    ;
+        }
+        /* utility class  */
+        .font {
+            color: white;
+            font-size: 2.5rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .font2 {
+            text-align: center;
+            color: rgb(20, 20, 18);
+            font-size: 4.5rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+
+    @media (max-width: 1350px) {
+        #about {
+            height: 1200px;
+            width: 100%;
+        }
+        .box {
+            
+            margin: auto;
+             
+        }
+    }
+    @media  (min-width:900px)and (max-width: 1160px) {
+      
+        #head {
+            height: 640px;
+            width: 500px;
+            /* border: 2px solid red; */
+            margin-left: 55px;
+        }
+        #head h1 {
+            font-size: 3rem;
+            text-align: center;
+        }
+
+     }
+   
+     @media (min-width:376px)and (max-width:900px) {
+        #menu {
+            display: flex;
+            /* flex-direction: column; */
+            margin-top:14px ;
+             
+        }
+        #menu li {
+            list-style: none;
+            margin: 5px 36px;
+        }
+        #menu ul li a {
+            font-size: 20px;
+            color: rgb(121 234 217);
+             
+        }
+        .bground{
+            background: rgba(0,0,0,0.5) url(../images/b1\ \(1\).jpg) center;
+            background-size: cover;
+            background-blend-mode: darken;
+        
+        }
+       
+       #navbar{
+        
+        height: 274px;  
+          
+       }
+       
+        /* #navbar::before{
+            content: "";
+       position: absolute; 
+       background-color: rgb(0, 0, 0);
+       opacity: 0.5;
+       z-index: -1;
+       height:290px;
+       width: 100%;
+        } */
+        #logo img {
+            height: 100%;
+            width: 100%;
+            border-radius: 55px;
+        }
+      
+         header::before {
+            background: url(../images/b1\ \(1\).jpg) no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            height: 900px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.65;
+        }
+        #about {
+            height: 2006px;
+            width: 100%;
+        }
+        #sec2{
+            height: 3286px;
+        }
+        
+        .box-pre {
+            
+            flex-direction: column;
+        }
+        #h2 {
+             
+            margin: auto;
+        }
+        .font2 {
+            text-align: center;
+            color: rgb(20, 20, 18);
+            font-size: 2rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #sec32 form input {
+           
+            width: 400px;
+            
+        }
+        #sec32 form button {
+           
+            width: 400px;
+            
+        }
+        #head h1 {
+            font-size: 2rem;
+            text-align: center;
+            color: rgb(185, 194, 16);
+        }
+        #head {
+            height: 200px;
+            width: 272px;
+            /* border: 2px solid red; */
+            margin: 12px 50px;
+        }
+        .box1 {
+            height: 384px;
+            width: 344px;
+            /* border: 2px solid blue; */
+        }
+        #sec32 form input {
+            width: 300px;
+        }
+        #sec32 form button {
+            width: 300px;
+        }
+
+        #sec3{
+            height: 500px;
+        }
+        #sec3::before {
+            content: "";
+            background: url(../images/b2.jpg) no-repeat center center/cover;
+            position: absolute;
+            height: 500px;
+            width: 100%;
+            z-index: -1;
+            opacity: .89;
+        }
+        .font {
+            color: white;
+            font-size: 1.5rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+     }
+     @media only screen and (max-width:900px){
+        
+        #logo{
+            height: 50px;
+width: 50px;
+padding-top: 0px;
+margin: 7px 25px;
+        }.list{
+            
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: 0.3s; 
+            position: absolute;
+            width: 60%;
+             margin:109px  auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+       }
+       .newlist{
+        transform:scaleY(1);  
+    }
+        #burger{
+            display: block;
+        }
+     }
+     @media   (max-width: 376px) {
+
+        #menu li {
+            list-style: none;
+            margin: 22px 36px;
+        }
+        #menu ul {
+            display: flex;
+            flex-direction: column;
+        }
+        #navbar {
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+        }
+        #logo img {
+            height: 100%;
+            width: 100%;
+            border-radius: 55px;
+        }
+        #menu{
+            margin-top:14px ;
+        }
+        header::before {
+            background: url(../images/aliaksei-manlyx-YipPfXLCiUo-unsplash3.jpg) no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            height: 900px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.65;
+        }
+        
+        #head {
+            height: 200px;
+            width: 221px;
+            margin: 213px 28px
+        }
+        #head h1 {
+            font-size: 1.7rem;
+            text-align: center;
+        }
+        .box {
+             
+            height: 280px;
+            width: 235px;
+             
+        }
+        .font {
+            color: white;
+            font-size: 1.5rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+        #about {
+            height: 1900px;
+             
+        }
+        #sec2 {
+            
+            height: 2093px;
+           
+        }
+        #h2 {
+            display: flex;
+            flex-direction: column;
+             
+            margin: 44px;
+        }
+        .box-pre {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .box1 {
+            height: 233px;
+            width: 255px;
+           
+        }
+        .box1 p {
+            font-size: 16px;
+            padding: 0px;
+        }
+        .box1 h3{
+            margin: 0px;
+        }
+        #sec32 form input {
+            width: 200px;
+            font-size: 11px;
+        }
+        #sec32 form button {
+            
+            width: 200px;
+           
+            font-size: 14px;
+             
+        }
+        .font2 {
+            text-align: center;
+            color: rgb(20, 20, 18);
+            font-size: 1.5rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #sec3{
+            height: 403px;
+        }
+        #sec3::before {
+            content: "";
+            background: url(../images/b2.jpg) no-repeat center center/cover;
+            position: absolute;
+            height: 403px;
+            width: 100%;
+            z-index: -1;
+            opacity: .89;
+        }
+     }
+     html,body{
+        scroll-behavior: smooth;  
+        margin: 0px;
+        padding: 0px;
+       
+        overflow-x: hidden;
+     }

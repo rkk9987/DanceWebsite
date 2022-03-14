@@ -1,0 +1,177 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .b {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 700px;
+        }
+
+        .para {
+            height: 300px;
+            width: 400px;
+            background-color: rgb(188, 196, 35);
+            /* color: turquoise; */
+        }
+
+        #btn {
+            width: 400px;
+            height: 50px;
+            background-color: seagreen;
+            color: white;
+            margin: 20px;
+        }
+        #burger{
+                position: absolute;
+                top: 5%;
+                right: 20px;
+                cursor: pointer;
+                display: none;
+        }
+        .line{
+            background-color: rgb(7, 6, 6);
+            height: 3px;
+            width: 44px; 
+            margin: 2px 10px;
+        }
+        .box{
+            background-color: red;
+            height:150px;
+            width: 100px;
+            margin: 10px;
+        }
+        @media only screen and (max-width:1300px) {
+            
+           
+            #burger{
+                display: block;
+            }
+            .h{
+                background-color: rgb(149, 196, 39);   
+                   height: 200px;
+                   background-color: rgb(9, 118, 165);
+            }
+            .b{
+                
+                transition: all 0.3s ease-out;
+                background-color: rgb(219, 238, 203);
+            }
+            .v{
+                opacity:0;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="k">This is the html page </div>
+    <div class="h b v">
+         <div class="box "></div>
+        <div class="box "></div>
+        <div class="box "></div>
+        <div class="box "></div>
+        <div class="box "></div> 
+        
+    </div>
+     
+<div id="burger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+</div>
+    <script>
+         
+         burger=document.querySelector('#burger');
+    //   para=document.querySelector('.para');
+    //      button=document.querySelector('#btn');
+         b=document.querySelector('.b');
+        //  s=document.querySelector('.s');
+         burger.addEventListener('click',()=>{
+                // para.classList.toggle('v');
+                // button.classList.toggle('v');
+                // s.classList.toggle('v');
+                b.classList.toggle('h');
+                b.classList.toggle('v');
+         });
+    </script>
+</body>
+
+</html> -->
+<html>
+    <head>
+        <title>Dropdow</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* body{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+    .container{
+        width: 200px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .click{
+        background-color: #f85f73;
+       position: absolute;
+       top: 5%;
+       right:20px;
+    }
+    .click,.links{
+        padding: 12px;
+        font-size: 1.2em;
+        border: none;
+        outline: none;
+        width: 200px;
+        color: white;
+        transition: 0.3s;
+    }
+    .list{
+        position:absolute;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: 0.3s;
+    }
+    .newlist{
+        transform:scaleY(1);  
+    }
+    .links{
+        background-color: #283c63;
+    }
+
+</style>
+    </head>
+    <body>
+        <div class="container">
+<button class="click">click me</button>
+<div class="list">
+    <button class="links">Link 1</button>
+    <button class="links">Link 2</button>
+    <button class="links">Link 3</button>
+    <button class="links">Link 4</button>
+</div>
+        </div>
+        <script>
+           let click= document.querySelector('.click');
+            let list=document.querySelector('.list');
+            click.addEventListener("click",()=>{
+                list.classList.toggle('newlist');
+            });
+        </script>
+    </body>
+</html>
